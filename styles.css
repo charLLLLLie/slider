@@ -8,7 +8,6 @@ body {
   font-family: 'Muli', sans-serif;
   overflow: hidden;
   margin: 0;
-  background-color: rgba(80, 128, 231, 0.671);
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -50,4 +49,15 @@ padding: 0 20px;
 .slide.active h3{
   opacity: 1;
   transition:  opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 480px){
+.container{
+  width: 100vw;
+}
+.slide:nth-last-of-type(4),
+.slide:nth-last-of-type(5){
+  display: none;
+}
+
 }
